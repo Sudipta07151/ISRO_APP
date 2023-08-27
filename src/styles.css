@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+body {
+    font-family: var(--font-family);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eeeeeec6;
+}
+.loader p-progressSpinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

@@ -1,0 +1,25 @@
+<div class="loader" *ngIf="loader">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s"></p-progressSpinner>
+</div>
+<div *ngIf="customerSatelliteData.length>0">
+    <p-table [value]="customerSatelliteData" [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Satellite</th>
+                    <th>Country</th>
+                    <th>Launch Date</th>
+                    <th>Mass</th>
+                    <th>Launcher</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>{{ product.id}}</td>
+                    <td>{{ product.country}}</td>
+                    <td>{{ product.launch_date}}</td>
+                    <td>{{ product.mass}}</td>
+                    <td>{{ product.launcher}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+</div>

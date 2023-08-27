@@ -1,0 +1,15 @@
+.header_logo_img img{
+    width: 8rem;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+.header_logo_img:hover{
+    cursor: pointer;
+}
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

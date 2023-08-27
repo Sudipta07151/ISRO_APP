@@ -1,0 +1,6 @@
+<div class="dashboard_card"> 
+    <div *ngFor="let item of dashboardCardMenuItems" routerLink={{item.link}} class="card_item">
+        <span class="imageSpan"><img src={{item.logo}}></span>
+        <span class="textSpan">{{item.menutext}}</span>
+    </div>
+</div>

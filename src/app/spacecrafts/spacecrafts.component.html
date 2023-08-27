@@ -1,0 +1,17 @@
+<div class="loader" *ngIf="loader">
+    <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s"></p-progressSpinner>
+</div>
+<div *ngIf="spaceCraftData.length>0">
+    <p-table [value]="spaceCraftData" [tableStyle]="{ 'min-width': '50rem' }">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Space Craft</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>{{ product.name}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+</div>
